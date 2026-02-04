@@ -3,6 +3,15 @@
 
 int main(){
     sfuns::print_things();
-    return 0;
+    //sfuns::fgamma();
 
+    double i = 1;
+    while (i <= 10){
+        std::cout << "fgamma(" << i << ") = " << sfuns::fgamma(i) << std::endl;
+        std::cout << "lnfgamma(" << i << ") = " << sfuns::lnfgamma(i) << std::endl;
+        i++;
+    }
+
+    
+    return 0;
 }
