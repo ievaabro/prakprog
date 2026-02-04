@@ -1,2 +1,2 @@
 #pragma once
-void hello(void); 
+void hello(void);
