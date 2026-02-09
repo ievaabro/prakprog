@@ -3,8 +3,12 @@
 #include<numbers>
 #include"sfuns.h"
 #include<limits>
+#include<complex>
+
 
 namespace sfuns{
+using complex=std::complex<double>;
+constexpr complex I = complex(0,1);
 
 void print_things() {
 	double sqrt2=std::sqrt(2.0);
@@ -15,6 +19,10 @@ void print_things() {
 	std::cout << "e^pi = " << epi << std::endl;
 	double pie = std::pow(std::numbers::pi, std::numbers::e);
 	std::cout << "pi^e = " << pie << std::endl;
+	std::cout << "log(I)=" << std::log(I)   <<"\n";
+    std::cout << "   I^I=" << std::pow(I,I) <<"\n";
+    std::cout << "   π^I=" << std::pow(std::numbers::pi,I) <<"\n";
+    std::cout << "   E^I=" << std::pow(std::numbers::e,I) <<"\n";
 }
 
 constexpr double PI = std::numbers::pi; // c++20
