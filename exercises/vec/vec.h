@@ -1,0 +1,51 @@
+#pragma once
+#include <iostream>
+#include <string>
+
+namespace pp{
+    struct vec {
+        double x, y, z;
+
+        // constructors
+        vec(double x, double y, double z) : x(x), y(y), z(z) {}  // parameterized
+        vec() : vec(0, 0, 0) {}                                    // default
+        vec(const vec&) = default;                                 // copy
+        vec(vec&&) = default;                                      // move
+        ~vec() = default;                                          // destructor
+
+        // assignment
+        vec& operator=(const vec&) = default;                     // copy assignment
+        vec& operator=(vec&&) = default;                          // move assignment
+
+        // arithmetic
+        vec& operator+=(const vec&);
+        vec& operator-=(const vec&);
+        vec& operator*=(double);
+        vec& operator/=(double);
+
+        // utility
+        void set(double a, double b, double c) { x = a; y = b; z = c; }
+        void print(const std::string& s = "") const;              // for debugging
+
+        // stream output
+        friend std::ostream& operator<<(std::ostream&, const vec&);
+
+        double dot(const vec& other) const;
+        vec cross(const vec& other) const;
+        double norm() const;    
+    };
+
+    // non-member operators
+    vec operator+(vec a, const vec& b);
+    vec operator-(vec a, const vec& b);
+    vec operator-(const vec& a);        // unary minus stays const&, not modern?
+    vec operator*(vec a, double s);
+    vec operator*(double s, vec a);
+    vec operator/(vec a, double s);
+
+
+
+    // approximate equality
+    bool approx(double x, double y, double acc = 1e-6, double eps = 1e-6);
+    bool approx(const vec& a, const vec& b, double acc = 1e-6, double eps = 1e-6);
+}
