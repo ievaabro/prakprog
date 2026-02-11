@@ -6,23 +6,53 @@ log(I)=(0,1.5708)
    I^I=(0.20788,0)
    π^I=(0.413292,0.910598)
    E^I=(0.540302,0.841471)
+
 fgamma(1) = 1
+(from cmath) tgamma(1) = 1
+difference between fgamma and tgamma: fgamma(1) - tgamma(1) = -1.09351e-08 so the difference is very small, and our approximation is good :)
 lnfgamma(1) = -1.09351e-08
+
 fgamma(2) = 1
+(from cmath) tgamma(2) = 1
+difference between fgamma and tgamma: fgamma(2) - tgamma(2) = -1.09351e-08 so the difference is very small, and our approximation is good :)
 lnfgamma(2) = -1.09351e-08
+
 fgamma(3) = 2
+(from cmath) tgamma(3) = 2
+difference between fgamma and tgamma: fgamma(3) - tgamma(3) = -2.18702e-08 so the difference is very small, and our approximation is good :)
 lnfgamma(3) = 0.693147
+
 fgamma(4) = 6
+(from cmath) tgamma(4) = 6
+difference between fgamma and tgamma: fgamma(4) - tgamma(4) = -6.56106e-08 so the difference is very small, and our approximation is good :)
 lnfgamma(4) = 1.79176
+
 fgamma(5) = 24
+(from cmath) tgamma(5) = 24
+difference between fgamma and tgamma: fgamma(5) - tgamma(5) = -2.62442e-07 so the difference is very small, and our approximation is good :)
 lnfgamma(5) = 3.17805
+
 fgamma(6) = 120
+(from cmath) tgamma(6) = 120
+difference between fgamma and tgamma: fgamma(6) - tgamma(6) = -1.31221e-06 so the difference is very small, and our approximation is good :)
 lnfgamma(6) = 4.78749
+
 fgamma(7) = 720
+(from cmath) tgamma(7) = 720
+difference between fgamma and tgamma: fgamma(7) - tgamma(7) = -7.87327e-06 so the difference is very small, and our approximation is good :)
 lnfgamma(7) = 6.57925
+
 fgamma(8) = 5040
+(from cmath) tgamma(8) = 5040
+difference between fgamma and tgamma: fgamma(8) - tgamma(8) = -5.51129e-05 so the difference is very small, and our approximation is good :)
 lnfgamma(8) = 8.52516
+
 fgamma(9) = 40320
+(from cmath) tgamma(9) = 40320
+difference between fgamma and tgamma: fgamma(9) - tgamma(9) = -0.000440903 so the difference is very small, and our approximation is good :)
 lnfgamma(9) = 10.6046
+
 fgamma(10) = 362880
+(from cmath) tgamma(10) = 362880
+difference between fgamma and tgamma: fgamma(10) - tgamma(10) = -0.00234798 so the difference is very small, and our approximation is good :)
 lnfgamma(10) = 12.8018
