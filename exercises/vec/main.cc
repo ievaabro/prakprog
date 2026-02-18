@@ -5,9 +5,9 @@
 using namespace pp;
 
 int main(){
-	vec v1{1.0, 2.0, 3.0};
-    vec v2{4.0, 5.0, 6.0};
-    vec v3;
+	vec<double> v1{1.0, 2.0, 3.0};
+    vec<double> v2{4.0, 5.0, 6.0};
+    vec<double> v3;
 
     std::cout << "v1: " << v1 << "\n";
     std::cout << "v2: " << v2 << "\n";
