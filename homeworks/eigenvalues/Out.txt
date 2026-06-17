@@ -1,0 +1,33 @@
+Input matrix A:
+
+         4          1          1 
+         1          3          0 
+         1          0          2 
+
+Eigenvalues:
+1.46791 2.6527 4.87939 
+
+Eigenvector matrix V:
+
+     0.449     -0.293      0.844 
+    -0.293      0.844      0.449 
+    -0.844     -0.449      0.293 
+Check of EVD, 1 means true
+VTAV == D: 1
+VDVT == A: 1
+VTV == I: 1
+VVT == I: 1
+
+Hydrogen atom s-wave radial Schrödinger equation on a grid
+Finding groundstate eigenvalue (expected -0.5)
+Ground state energy: -0.498755
+n = 50 time = 0.00221356 seconds
+n = 100 time = 0.0226901 seconds
+n = 150 time = 0.0644291 seconds
+n = 200 time = 0.158413 seconds
+n = 250 time = 0.311835 seconds
+n = 300 time = 0.527551 seconds
+n = 350 time = 0.854582 seconds
+n = 400 time = 1.24294 seconds
+n = 450 time = 1.80446 seconds
+n = 500 time = 2.63736 seconds
