@@ -136,11 +136,11 @@ int main(){
 
     pp::vector rr = newton(rosenbrock_grad,xr);
 
-    std::cout << "Rosenbrock minimum:\n";
+    std::cout << "Rosenbrock min:\n";
     std::cout << rr[0] << " "
          << rr[1] << "\n\n";
 
-    pout << "Rosenbrock minimum:\n";
+    pout << "Rosenbrock min:\n";
     pout << rr[0] << " "
          << rr[1] << "\n\n";
 
@@ -153,11 +153,11 @@ int main(){
 
     pp::vector rh = newton(himmel_grad,xh);
 
-    std::cout << "Himmelblau minimum:\n";
+    std::cout << "Himmelblau min:\n";
     std::cout << rh[0] << " "
          << rh[1] << "\n\n";
 
-    pout << "Himmelblau minimum:\n";
+    pout << "Himmelblau min:\n";
     pout << rh[0] << " "
          << rh[1] << "\n\n";
 
