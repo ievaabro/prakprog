@@ -1,0 +1,4 @@
+a = 142.404
+lambda = 0.170624+/-0.00341594
+Half-life = 4.06242+/-0.0813307 days
+Modern Value = 3.6316 days
