@@ -1,0 +1,12 @@
+
+Integral 1/sqrt(x):
+  normal = 1.99996, calls = 8572
+  CC     = 1.99999, calls = 16
+
+Integral log(x)/sqrt(x):
+  normal = -3.99992, calls = 8604
+  CC     = -3.99987, calls = 96
+
+Infinite interval tests:
+exp(-x) from 0 to ∞ = 1 (exact 1), calls = 540
+exp(-x^2) from -∞ to ∞ = 1.77245 (exact 1.77245), calls = 1128

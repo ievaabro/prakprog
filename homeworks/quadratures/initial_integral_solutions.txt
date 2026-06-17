@@ -1,0 +1,24 @@
+-----------------------------------
+∫₀¹ sqrt(x) dx
+Result        = 0.666954
+Exact         = 0.666667
+Actual error  = 0.000287242
+Function calls= 16
+-----------------------------------
+∫₀¹ 1/sqrt(x) dx
+Result        = 1.99996
+Exact         = 2
+Actual error  = 3.84999e-05
+Function calls= 8572
+-----------------------------------
+∫₀¹ sqrt(1-x²) dx
+Result        = 0.785812
+Exact         = 0.785398
+Actual error  = 0.00041433
+Function calls= 16
+-----------------------------------
+∫₀¹ ln(x)/sqrt(x) dx
+Result        = -3.99992
+Exact         = -4
+Actual error  = 8.2941e-05
+Function calls= 8604
