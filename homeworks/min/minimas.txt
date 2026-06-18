@@ -1,0 +1,27 @@
+=== Rosenbrock function ===
+Steps   = 24
+Minimum = (0.999892, 0.999783)
+
+=== Himmelblau function ===
+Steps   = 5
+Minimum = (3, 2)
+
+PART B: Higgs fit
+Best fit parameters (forward):
+m     = 125.972
+Gamma = 2.08633
+A     = 9.87621
+Dmin  = 26.8695
+steps = 6
+
+PART C: Central differences
+Rosenbrock min (central): Rosenbrock steps (central): 19
+
+Himmelblau min (central): (3, 2.00003)
+Himmelblau steps (central): 2
+Himmelblau min (central): (-2.80512, 3.13131)
+Himmelblau steps (central): 3
+Himmelblau min (central): (-3.77931, -3.28319)
+Himmelblau steps (central): 3
+Himmelblau min (central): (3.58443, -1.84813)
+Himmelblau steps (central): 2
