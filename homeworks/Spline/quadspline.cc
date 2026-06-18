@@ -10,9 +10,7 @@ make_qspline(vector x, vector y)
 
     vector b(n), c(n);
 
-    // a_i = y_i, implicit
-
-    // --- compute coefficients ---
+    // coefficients
     b[0] = (y[1] - y[0]) / (x[1] - x[0]);
 
     for(int i = 0; i < n - 1; i++) {
@@ -26,23 +24,8 @@ make_qspline(vector x, vector y)
         c[i] = (b[i+1] - b[i]) / (2*dx);
     }
 
-    // last interval curvature (optional safe fallback)
     c[n-1] = 0;
 
-    // // --- returned spline function ---
-    // auto spline = [=](double z) mutable -> double {
-
-    //     // find interval
-    //     int i = 0;
-    //     while(i < n-2 && z > x[i+1])
-    //         i++;
-
-    //     double dx = z - x[i];
-
-    //     return y[i] + b[i]*dx + c[i]*dx*dx;
-    // };
-
-    // --- MOVE CAPTURE LAMBDA ---
     return [x = std::move(x),
             y = std::move(y),
             b = std::move(b),
