@@ -47,7 +47,7 @@ int main() {
     }
     fclose(points_file);
     
-    printf("Data gemt i interp.data, integ.data og points.data\n");
+    printf("Data saved in interp.data, integ.data and points.data\n");
     
     int n1 = 5;
     vector x1(n1), y1(n1);

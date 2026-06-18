@@ -14,7 +14,7 @@ plot: main
 	set xlabel "x"; set ylabel "y"; \
 	plot "interp.data" using 1:2 with lines title "Interpolant", \
 	     "interp.data" using 1:3 with lines title "cos(x) exact", \
-	     "points.data" using 1:2 with points pt 7 ps 1.2 title "Tbale data"; \
+	     "points.data" using 1:2 with points pt 7 ps 1.2 title "Table data"; \
 	set output "integration.svg"; \
 	set title "Integral of linear spline"; \
 	plot "integ.data" using 1:2 with lines title "Spline integral", \
