@@ -1,5 +1,5 @@
-set terminal pdfcairo enhanced font "Times,12" size 10cm,7cm
-set output 'fig_decay.pdf'
+set terminal pngcairo size 800,600
+set output 'fig_decay.png'
 
 set xlabel "Time (days)"
 set ylabel "Activity"
@@ -10,6 +10,6 @@ set key box
 set pointintervalbox 0
 
 plot \
-"fit.dat" using 1:3:4 with filledcurves fs solid 1 lc rgb "#e72bd7" title "Exponential fit band", \
-"fit.dat" using 1:2 with lines lc rgb "#6A0DAD" lw 2.4 title "Exponential fit", \
-"data.txt" using 1:2:3 with yerrorbars lc rgb "#cb730e" pt 7 ps 0.5 lw 1.3 title "Experimental data"
+"fit.dat" using 1:3:4 with filledcurves fs solid 1 lc rgb "#767fff" title "Exponential fit band", \
+"fit.dat" using 1:2 with lines lc rgb "#000099" lw 2.4 title "Exponential fit", \
+"data.txt" using 1:2:3 with yerrorbars lc rgb "#ffd500" pt 7 ps 0.5 lw 1.3 title "Experimental data"

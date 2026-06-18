@@ -101,37 +101,3 @@ int main(){
     return 0;
 
 }
-
-    // std::ofstream fitfile("fit.txt");
-
-    // for(double z=0; z<=16; z+=0.1){
-
-    //     double fit = a*std::exp(-lambda*z);
-
-    //     fitfile
-    //         << z << " "
-    //         << fit << "\n";
-    // }
-
-    // std::ofstream f("fit_band.txt");
-
-    // for(double t=0; t<=16; t+=0.1){
-
-    //     auto F = [&](double LN_A, double Lambda){
-    //         return LN_A*std::exp(-Lambda*t);
-    //     };
-
-    //     double f0 = F(ln_a, lambda);
-
-    //     double fpp = F(ln_a+d_ln_a, lambda+d_lambda);
-    //     double fpm = F(ln_a+d_ln_a, lambda-d_lambda);
-    //     double fmp = F(ln_a-d_ln_a, lambda+d_lambda);
-    //     double fmm = F(ln_a-d_ln_a, lambda-d_lambda);
-
-    //     f << t << " "
-    //     << f0  << " "
-    //     << fpp << " "
-    //     << fpm << " "
-    //     << fmp << " "
-    //     << fmm << "\n";
-    // }
