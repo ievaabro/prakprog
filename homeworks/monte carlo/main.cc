@@ -223,8 +223,81 @@ pair<double,double> plainmc(
     };
 }
 
-int main(){
+// ===============================
+// PART (C): Clenshaw–Curtis adaptive integrator
+// ===============================
 
+long long eval_count = 0;
+
+// wrapper to count evaluations
+double fcount(double f(vector<double>), vector<double> x){
+    eval_count++;
+    return f(x);
+}
+
+// transformed integrand for CC
+struct CCData{
+    double a, b;
+    double (*f)(vector<double>);
+};
+
+// 1D function after CC transform
+double cc_integrand(double theta, CCData &D){
+    double x = (D.a + D.b)/2.0 + (D.b - D.a)/2.0 * cos(theta);
+
+    vector<double> v(1);
+    v[0] = x;
+
+    return fcount(D.f, v) * sin(theta) * (D.b - D.a)/2.0;
+}
+
+// recursive open 4-point rule (like assignment hint)
+double adapt_cc(double (*g)(double, CCData&), CCData &D,
+                double a, double b,
+                double acc, double eps)
+
+{   if (fabs(b - a) < 1e-12) return 0;
+    double h = b - a;
+
+    double x1 = a + h/6.0;
+    double x4 = a + 5.0*h/6.0;
+
+    double f1 = g(x1, D);
+    double f4 = g(x4, D);
+
+    double f2 = g(a + 2.0*h/6.0, D);
+    double f3 = g(a + 4.0*h/6.0, D);
+
+    double Q = (2*f1 + f2 + f3 + 2*f4)/6.0 * (b-a);
+    double q = (f1 + f2 + f3 + f4)/4.0 * (b-a);
+
+    double tol = acc + eps * fabs(Q);
+    double err = fabs(Q - q);
+
+    if(err < tol){
+        return Q;
+    }
+    else{
+        double mid = (a+b)/2.0;
+
+        double left  = adapt_cc(g, D, a, mid, acc/sqrt(2), eps);
+        double right = adapt_cc(g, D, mid, b, acc/sqrt(2), eps);
+
+        return left + right;
+    }
+}
+
+double inv_sqrt(vector<double> x){
+    return 1.0 / sqrt(x[0]);
+}
+
+double log_over_sqrt(vector<double> x){
+    return log(x[0]) / sqrt(x[0]);
+}
+
+int main(){
+    eval_count = 0;
+    
     lcg rng(1234);
 
     vector<double> a = {-1,-1};
@@ -328,6 +401,35 @@ int main(){
             << mt_error << " "
             << quasi_error << endl;
     }
+
+
+    cout << "\n=== Clenshaw–Curtis tests ===\n";
+
+// test 1: ∫0^1 1/sqrt(x) dx = 2
+{
+    eval_count = 0;
+
+    CCData D{0.0, 1.0, inv_sqrt};
+
+    double result = adapt_cc(cc_integrand, D, 0, M_PI, 1e-6, 1e-6);
+
+    cout << "1/sqrt(x): " << result
+         << " evals = " << eval_count
+         << " error = " << fabs(result - 2.0) << endl;
+}
+
+// test 2: ∫0^1 ln(x)/sqrt(x) dx = -4
+{
+    eval_count = 0;
+
+    CCData D{0.0, 1.0, log_over_sqrt};
+
+    double result = adapt_cc(cc_integrand, D, 0, M_PI, 1e-6, 1e-6);
+
+    cout << "ln(x)/sqrt(x): " << result
+         << " evals = " << eval_count
+         << " error = " << fabs(result + 4.0) << endl;
+}
 
     qout.close();
 

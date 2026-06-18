@@ -9,6 +9,6 @@ set ylabel "Error"
 set grid
 
 plot \
-    "compare.dat" using 1:2 with linespoints title "LC error", \
-    "compare.dat" using 1:3 with linespoints title "mt19937 error", \
-    "compare.dat" using 1:4 with linespoints title "quasi-MC"
+    "compare.dat" using 1:2 with linespoints lw 3 lc rgb '#ffccfd' title "LC error", \
+    "compare.dat" using 1:3 with linespoints lw 3 lc rgb '#ff05ee' title "mt19937 error", \
+    "compare.dat" using 1:4 with linespoints lw 3 lc rgb '#5900ff' title "quasi-MC"
