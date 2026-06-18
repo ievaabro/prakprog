@@ -1,5 +1,5 @@
-set terminal pdfcairo enhanced font "Times,12" size 10cm,7cm
-set output 'fig_timing.pdf'
+set terminal pngcairo size 800,600
+set output 'fig_timing.png'
 
 set xlabel "N (matrix size)"
 set ylabel "Time"
