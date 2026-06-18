@@ -142,3 +142,39 @@ correlation matrix of the fit parameters:
                 a      b      
 a               1.000 
 b              -1.000  1.000 
+
+
+*******************************************************************************
+Thu Jun 18 10:49:55 2026
+
+
+FIT:    data read from "timing.dat" using 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x**b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3731959244e+01   0.00e+00  7.29e-01    1.000000e-09   3.000000e+00
+ 211 1.1124108351e-02  -3.40e-02  7.29e-07    6.796152e-09   3.192467e+00
+
+After 211 iterations the fit converged.
+final sum of squares of residuals : 0.0111241
+rel. change during last iteration : -3.39656e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0372896
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00139051
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 6.79615e-09      +/- 2.989e-09    (43.98%)
+b               = 3.19247          +/- 0.07111      (2.228%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -1.000  1.000 
