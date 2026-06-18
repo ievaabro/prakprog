@@ -186,10 +186,10 @@
 		L743.06,121.62 L746.59,129.05 L750.12,136.80 L753.65,144.86 L757.17,153.22 L760.70,161.89 L764.23,170.88 L767.76,180.17
 		L771.29,189.77 L774.82,199.67  '/></g>
 	</g>
-	<g id="gnuplot_plot_2" ><title>sin(x) eksakt</title>
+	<g id="gnuplot_plot_2" ><title>sin(x) exact</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(707.09,93.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text><tspan font-family="Arial" >sin(x) eksakt</tspan></text>
+		<text><tspan font-family="Arial" >sin(x) exact</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -240,7 +240,7 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(423.67,30.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >Integral af lineær spline</tspan></text>
+		<text><tspan font-family="Arial" >Integral of linear spline</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">

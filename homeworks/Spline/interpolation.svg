@@ -186,10 +186,10 @@
 		L743.06,459.25 L746.59,466.08 L750.12,472.90 L753.65,479.73 L757.17,486.56 L760.70,493.39 L764.23,500.22 L767.76,507.04
 		L771.29,513.87 L774.82,520.70  '/></g>
 	</g>
-	<g id="gnuplot_plot_2" ><title>cos(x) eksakt</title>
+	<g id="gnuplot_plot_2" ><title>cos(x) exact</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(707.09,93.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text><tspan font-family="Arial" >cos(x) eksakt</tspan></text>
+		<text><tspan font-family="Arial" >cos(x) exact</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -220,10 +220,10 @@
 		L743.06,462.68 L746.59,470.67 L750.12,478.31 L753.65,485.58 L757.17,492.47 L760.70,498.96 L764.23,505.04 L767.76,510.70
 		L771.29,515.92 L774.82,520.70  '/></g>
 	</g>
-	<g id="gnuplot_plot_3" ><title>Tabelpunkter</title>
+	<g id="gnuplot_plot_3" ><title>Tbale data</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(707.09,111.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text><tspan font-family="Arial" >Tabelpunkter</tspan></text>
+		<text><tspan font-family="Arial" >Tbale data</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -269,7 +269,7 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(423.67,30.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Arial" >Lineær spline interpolation af cos(x)</tspan></text>
+		<text><tspan font-family="Arial" >Linear spline interpolation of cos(x)</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
