@@ -1,4 +1,4 @@
-set terminal pngcairo enhanced font "Times,12" size 10cm,7cm
+set terminal pngcairo size 800,600
 set output 'fig_dr.png'
 
 set xlabel "Δr"

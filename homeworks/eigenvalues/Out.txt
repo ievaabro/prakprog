@@ -21,13 +21,13 @@ VVT == I: 1
 Hydrogen atom s-wave radial Schrödinger equation on a grid
 Finding groundstate eigenvalue (expected -0.5)
 Ground state energy: -0.498755
-n = 50 time = 0.0028194 seconds
-n = 100 time = 0.0253921 seconds
-n = 150 time = 0.0720695 seconds
-n = 200 time = 0.169354 seconds
-n = 250 time = 0.340446 seconds
-n = 300 time = 0.623425 seconds
-n = 350 time = 0.94324 seconds
-n = 400 time = 1.3413 seconds
-n = 450 time = 1.965 seconds
-n = 500 time = 2.87277 seconds
+n = 50 time = 0.00340435 seconds
+n = 100 time = 0.023625 seconds
+n = 150 time = 0.0798204 seconds
+n = 200 time = 0.166464 seconds
+n = 250 time = 0.351049 seconds
+n = 300 time = 0.611737 seconds
+n = 350 time = 0.95736 seconds
+n = 400 time = 1.38439 seconds
+n = 450 time = 1.97664 seconds
+n = 500 time = 2.82767 seconds
